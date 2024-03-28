@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element><web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         id="WebApp_ID" version="4.0">
+    <!-- Add a context parameter to specify the context root -->
+    <context-param>
+        <param-name>context-root</param-name>
+        <param-value>/studentsreg.web</param-value>
+    </context-param>
+    
+    <session-config>
+    <session-timeout>1</session-timeout> <!-- 1 minute -->
+</session-config>
+    
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>studentsreg.web.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    
+
+    <servlet>
+        <servlet-name>AcademicUnitServlet</servlet-name>
+        <servlet-class>studentsreg.web.AcademicUnitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AcademicUnitServlet</servlet-name>
+        <url-pattern>/insertAcademicUnit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CourseDefinitionServlet</servlet-name>
+        <servlet-class>studentsreg.web.CourseDefinitionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CourseDefinitionServlet</servlet-name>
+        <url-pattern>/courseDefinition/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CourseServlet</servlet-name>
+        <servlet-class>studentsreg.web.CourseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CourseServlet</servlet-name>
+        <url-pattern>/courses/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SemesterServlet</servlet-name>
+        <servlet-class>studentsreg.web.SemesterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SemesterServlet</servlet-name>
+        <url-pattern>/insertSemester</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeacherServlet</servlet-name>
+        <servlet-class>studentsreg.web.TeacherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeacherServlet</servlet-name>
+        <url-pattern>/insertTeacher</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentServlet</servlet-name>
+        <servlet-class>studentsreg.web.StudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentServlet</servlet-name>
+        <url-pattern>/students/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentRegistrationServlet</servlet-name>
+        <servlet-class>studentsreg.web.StudentRegistrationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentRegistrationServlet</servlet-name>
+        <url-pattern>/studentRegistration/*</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
+</element>
+
+

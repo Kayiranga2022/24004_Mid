@@ -1,0 +1,57 @@
+h1, h2, h3 {
+    margin: 1em 0;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  /* Faculty and Program Titles */
+  .faculty {
+    font-weight: bold;
+  }
+  .program {
+    margin-left: 1em;
+  }
+  /* Special symbols */
+  sup {
+    vertical-align: super;
+  }
+  table {
+    border-collapse: collapse; /* Combine borders for cells */
+    width: 100%; /* Full width */
+    margin-bottom: 20px; /* Space below table */
+  }
+  
+  th, td {
+    padding: 10px; /* Padding around cell content */
+    text-align: left; /* Align text to the left */
+    border: 1px solid #ddd; /* Gray border for each cell */
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+  }  
+
+  /* Journal */
+
+  h1 {
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+  
+  a:hover {
+    color: underline;
+  }
